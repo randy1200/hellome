@@ -14,6 +14,13 @@
 </head>
 <body>
 	<img id="logo" src="logo_blue.png" alt="logo.png"/>
-	<h1><?php echo "Hello, World!!"; ?></h1>
+	<h1>
+		<?php
+		print "Hello, ";
+		// Print what was submitted in the form parameter called 'user'
+		print $_POST['user'];
+		print "!";
+		?>
+	</h1>
 </body>
 </html>
